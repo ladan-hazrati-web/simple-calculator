@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="assets/stylesheet/master.css">
+</head>
+<body>
+    <main id="main">
+        <section id="_calc">
+            <h1>Simple Calculator</h1>
+            <p>A simple form to calculate two numbers. </p>
+            <div class="row">
+                <p>Number 1:</p>
+                <input type="text" placeholder="First Number" id="num1">
+            </div>
+            <div class="row">
+                <p>Number 2:</p>
+                <input type="text" placeholder="Second Number" id="num2">
+            </div>
+            <div class="row">
+              <button onclick="_op('+')">+</button>
+              <button onclick="_op('-')">-</button>
+              <button onclick="_op('*')">*</button>
+              <button onclick="_op('/')">/</button>
+            </div>
+            <button onclick="_calc()">Calculate</button>
+        </section>
+        <section id="_answer">
+            <p>Answer</p>
+            <p id="sum">0</p>
+        </section>
+    </main>
+    <script src="assets/js/master.js"></script>
+</body>
+</html>

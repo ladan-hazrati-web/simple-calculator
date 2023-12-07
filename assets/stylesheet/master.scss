@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f3f5;
+}
+input::placeholder{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    >#_calc {
+        width: 450px;
+        background-color: white;
+        padding: 50px;
+        margin-top: 20px;
+        padding-right: 0;
+        box-shadow:  0 0 10px 0px rgb(174, 172, 172);
+        >h1{
+            font-size: 30px;
+            padding-left: 15px;
+        }
+    
+        >p {
+            font-size: 14px;
+            color: gray;
+            margin-top: 5px;
+            margin-bottom: 25px;
+            padding-left: 15px;
+        }
+        >.row{
+            align-items: center;
+            margin: 20px 0;
+            &:nth-of-type(1) ,  &:nth-of-type(2) {
+                padding-left: 15px;
+                >p{
+                    font-size: 15px;
+                }
+                >input{
+                    padding: 10px;
+                    margin: 0 10px;
+                    border: 1px solid gainsboro;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+            &:nth-of-type(3){
+                margin: 10px 80px;
+                gap: 15px;
+                >button{
+                    padding: 10px 15px;
+                    background-color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border: 1px solid gainsboro;
+                }
+            }
+        }
+        >button{
+            padding: 10px 30px;
+            margin: 10px 80px;
+            border: none;
+            color: white;
+            background-color: green;
+            cursor: pointer;
+            border: 2px solid green;
+            transition: 0.4s;
+            font-weight: bold;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            &:hover{
+                color: green;
+                background-color: white;
+            }
+        }
+    }
+    >#_answer{
+        width: 100%;
+        height: 150px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        padding: 10px 0;
+        >p{
+            &:nth-of-type(1){
+                font-size: 30px;
+            }
+            &:nth-of-type(2){
+                color: red;
+                margin-top: 20px;
+                font-size: 50px;
+                word-wrap: break-word;
+                max-width: 80%;
+            }
+        }
+    }
+}
